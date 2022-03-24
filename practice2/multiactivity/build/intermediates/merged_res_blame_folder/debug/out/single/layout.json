@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_second.xml",
+        "source": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\src\\main\\res\\layout\\activity_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_second.xml",
+        "source": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\src\\main\\res\\layout\\content_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\minot\\Desktop\\JavaMobile\\practice2\\multiactivity\\src\\main\\res\\layout\\fragment_first.xml"
+    }
+]

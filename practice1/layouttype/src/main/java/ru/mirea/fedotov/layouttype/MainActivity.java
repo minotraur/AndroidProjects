@@ -1,0 +1,25 @@
+package ru.mirea.fedotov.layouttype;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.constraint_layout);
+        TextView myTextView = (TextView) findViewById(R.id.textView);
+        myTextView.setText("New text in MIREA");
+        Button button = findViewById(R.id.button15);
+        button.setText("Hello");
+        CheckBox checkBox = findViewById(R.id.checkBox);
+        checkBox.setChecked(true);
+
+
+    }
+}
