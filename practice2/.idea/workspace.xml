@@ -18,6 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\minot\.android\avd\Pixel_5_API_28_6.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -56,7 +57,7 @@
       <recent name="ru.mirea.fedotov.multiactivity" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.dialog">
+  <component name="RunManager" selected="Android App.intentfilter">
     <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="practice2.toastapp" />
       <option name="DEPLOY" value="true" />
@@ -411,7 +412,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="toastapp" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="toastapp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="practice2.toastapp" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
