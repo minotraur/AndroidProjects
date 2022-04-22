@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIptext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="289dp"
+        android:onClick="onClick"
+        android:text="Get Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCity"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIptext" />
+
+    <TextView
+        android:id="@+id/textViewIptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="IP:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTimezone"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountry" />
+
+    <TextView
+        android:id="@+id/textViewTimezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="TimeZone:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTimezone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
