@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Login screen" />
+        <item
+            android:id="@+id/nav_brouser"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="@string/brouser" />
+        <item
+            android:id="@+id/nav_calculate"
+            android:icon="@android:drawable/stat_notify_more"
+            android:title="@string/calculate" />
+
+        <item
+            android:id="@+id/nav_musicPlayer"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="@string/music_player" />
+
+        <item
+            android:id="@+id/nav_datchic"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/datchic" />
+
+        <item
+            android:id="@+id/nav_photo"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/photo" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_retrofit"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="Retrofit" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/map" />
+        <item
+            android:id="@+id/nav_live_data"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="@string/livedata" />
+
+        <item
+            android:id="@+id/notesV2Fragment"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="NotesV2" />
+
+    </group>
+</menu>
