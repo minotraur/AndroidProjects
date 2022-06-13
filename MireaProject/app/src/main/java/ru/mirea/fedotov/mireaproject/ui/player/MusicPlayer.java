@@ -1,38 +1,21 @@
 package ru.mirea.fedotov.mireaproject.ui.player;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import ru.mirea.fedotov.mireaproject.ui.player.PlayerService;
 
-import ru.mirea.fedotov.mireaproject.MainActivity;
+import androidx.fragment.app.Fragment;
+
 import ru.mirea.fedotov.mireaproject.R;
 
 public class MusicPlayer extends Fragment {
-    // music player
     Button playButton;
     boolean musicPlay = false;
 
     public MusicPlayer() {
-
-    }
-
-    public static MusicPlayer newInstance(String param1, String param2) {
-        MusicPlayer fragment = new MusicPlayer();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
@@ -44,40 +27,46 @@ public class MusicPlayer extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_music_player, container, false);
-        playButton = view.findViewById(R.id.playButton);
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                PlayOrStopMusic(view);
-            }
-        });
+        playButton = view.findViewById(R.id.button);
+        playButton.setOnClickListener(view1 -> PlayOrStopMusic());
         return view;
     }
 
 
     // Music Player
-    public void onClickPlayMusic(View view) {
+    public void onClickPlayMusic() {
         getActivity().startService(
-                new Intent(getActivity(), PlayerService.class));
+                new Intent(getActivity(), MusicService.class));
     }
-    public void onClickStopMusic(View view) {
+    public void onClickStopMusic() {
         getActivity().stopService(
-                new Intent(getActivity(), PlayerService.class));
+                new Intent(getActivity(), MusicService.class));
     }
-    public  void  PlayOrStopMusic(View view){
+    public  void  PlayOrStopMusic(){
         if (!musicPlay){
-            onClickPlayMusic(view);
+            onClickPlayMusic();
             musicPlay = true;
             playButton.setText("Stop");
         }
         else{
-            onClickStopMusic(view);
+            onClickStopMusic();
             musicPlay = false;
             playButton.setText("Play");
         }
     }
 
 
+    public void Method(View view) {
+        if (!musicPlay){
+            onClickPlayMusic();
+            musicPlay = true;
+            playButton.setText("Stop");
+        }
+        else{
+            onClickStopMusic();
+            musicPlay = false;
+            playButton.setText("Play");
+        }
+    }
 }

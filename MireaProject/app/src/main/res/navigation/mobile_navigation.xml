@@ -72,7 +72,7 @@
         tools:layout="@layout/fragment_music_player" />
     <fragment
         android:id="@+id/nav_map"
-        android:name="ru.mirea.fedotov.mireaproject.ui.map.MapsFragment"
+        android:name="ru.mirea.fedotov.mireaproject.ui.map.MapFragment"
         android:label="Map"
         tools:layout="@layout/fragment_maps" />
     <fragment
@@ -103,5 +103,14 @@
             android:id="@+id/action_addNoteV2Fragment_to_notesV2Fragment"
             app:destination="@id/notesV2Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentAudio"
+        android:name="ru.mirea.fedotov.mireaproject.ui.audio.FragmentAudio"
+        android:label="FragmentAudio" />
+    <fragment
+        android:id="@+id/nav_histories"
+        android:name="ru.mirea.fedotov.mireaproject.ui.Stories.HistoriesFragment"
+        android:label="Histories"
+        tools:layout="@layout/fragment_stories" />
 
 </navigation>
