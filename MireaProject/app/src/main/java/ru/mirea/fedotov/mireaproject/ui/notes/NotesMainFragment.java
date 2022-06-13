@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import ru.mirea.fedotov.mireaproject.R;
 import ru.mirea.fedotov.mireaproject.ui.notes.db.Notes;
 import ru.mirea.fedotov.mireaproject.ui.notes.db.RoomDB;
@@ -30,11 +29,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class NotesMainFragment extends Fragment implements NotesListAdapter.ItemClicked { //implements NotesListAdapter.OnNoteListener
+public class NotesMainFragment extends Fragment implements NotesListAdapter.ItemClicked{ //implements NotesListAdapter.OnNoteListener
     RecyclerView recyclerView;
     FloatingActionButton fab_add_notes;
 
-    //    private ArrayList<Notes> mNotes = new ArrayList<>();
+//    private ArrayList<Notes> mNotes = new ArrayList<>();
     private NotesListAdapter notesListAdapter;
     private ViewModel viewModel;
 
@@ -54,7 +53,7 @@ public class NotesMainFragment extends Fragment implements NotesListAdapter.Item
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        fab_add_notes = view.findViewById(R.id.fab_add_notes);
+        fab_add_notes=view.findViewById(R.id.fab_add_notes);
 
 
         fab_add_notes.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +64,7 @@ public class NotesMainFragment extends Fragment implements NotesListAdapter.Item
             }
         });
 
-        recyclerView = view.findViewById(R.id.recycler_home);
+        recyclerView=view.findViewById(R.id.recycler_home);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this.getContext(), DividerItemDecoration.VERTICAL);
@@ -80,9 +79,9 @@ public class NotesMainFragment extends Fragment implements NotesListAdapter.Item
     }
 
 
-    private void loadNotesList() {
+    private void loadNotesList(){
         RoomDB database = RoomDB.getInstance(this.getContext());
-        List<Notes> notesList = database.mainDao().getAll();
+        List<Notes> notesList =  database.mainDao().getAll();
         notesListAdapter.setNotesList(notesList);
     }
 

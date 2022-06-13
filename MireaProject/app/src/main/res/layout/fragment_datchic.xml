@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#696666"
     tools:context=".ui.datchic.FragmentDatchic">
 
 
     <TextView
         android:id="@+id/textViewAzimuth"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -22,15 +24,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAzimuth" />
 
     <TextView
         android:id="@+id/textViewRoll"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPitch" />
 
@@ -41,6 +45,7 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="Акселерометр"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="148dp" />
 
@@ -51,6 +56,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text=""
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -61,6 +67,7 @@
         android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="Атмосферное давление (мбар)"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/textViewRoll"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -71,6 +78,7 @@
         android:layout_marginTop="64dp"
         android:gravity="center"
         android:text="Температура воздуха"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/textViewPressure"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -81,6 +89,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text=""
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:layout_editor_absoluteX="0dp" />
 

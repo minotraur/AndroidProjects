@@ -1,6 +1,5 @@
 package ru.mirea.fedotov.mireaproject.ui.notesV2;
 
-import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.os.AsyncTask;
 
@@ -10,7 +9,6 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import ru.mirea.fedotov.mireaproject.ui.notes.db.RoomDB;
 
 @Database(entities = {Note.class}, version = 1)
 public abstract class NoteDatabase extends RoomDatabase {

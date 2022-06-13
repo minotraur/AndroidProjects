@@ -1,6 +1,5 @@
 package ru.mirea.fedotov.mireaproject.ui.settings;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -13,14 +12,11 @@ import androidx.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import ru.mirea.fedotov.mireaproject.R;
-
-import java.util.Objects;
 
 public class HomeSettingsFragment extends Fragment {
     FloatingActionButton fab_settings;

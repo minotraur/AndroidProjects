@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#696666"
     tools:context=".LoginActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="252dp"
         android:text="@string/emailpassword_title_text"
+        android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/signed_out"
+        android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +34,7 @@
         android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#EAE9E9"
+        android:background="#696666"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -42,12 +45,16 @@
                 android:id="@+id/fieldEmail"
                 android:layout_weight="1"
                 android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/fieldPassword"
                 android:layout_weight="1"
                 android:hint="Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
 
@@ -56,11 +63,13 @@
             <Button
                 android:id="@+id/emailSignInButton"
                 android:layout_weight="1"
+                android:backgroundTint="#651414"
                 android:text="@string/sign_in" />
 
             <Button
                 android:id="@+id/emailCreateAccountButton"
                 android:layout_weight="1"
+                android:backgroundTint="#651414"
                 android:text="@string/create_account" />
         </TableRow>
     </TableLayout>
@@ -69,25 +78,27 @@
         android:id="@+id/signedInButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#696666"
         android:orientation="horizontal"
         android:visibility="gone"
-        android:background="#EAE9E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/signOutButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/signOutButton"
             android:layout_weight="1"
+            android:backgroundTint="#651414"
             android:text="@string/sign_out" />
 
         <Button
+            android:id="@+id/verifyEmailButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/verifyEmailButton"
             android:layout_weight="1"
+            android:backgroundTint="#919090"
             android:text="@string/verify_email" />
 
     </LinearLayout>
@@ -98,6 +109,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="100dp"
         android:layout_marginBottom="136dp"
+        android:backgroundTint="#651414"
         android:text="Войти"
         app:layout_constraintBottom_toTopOf="@+id/table"
         app:layout_constraintStart_toStartOf="parent"

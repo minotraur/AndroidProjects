@@ -12,14 +12,14 @@ public class NotesRepository {
     private MainDAO mainDAO;
     private RoomDB roomDB;
 
-    public NotesRepository(Application application) {
+    public NotesRepository(Application application){
         roomDB = RoomDB.getInstance(application);
         mainDAO = roomDB.mainDao();
     }
 
 
-    public void deleteNote(final Notes notes) {
-        new AsyncTask<Void, Void, Void>() {
+    public void deleteNote(final Notes notes){
+        new AsyncTask<Void, Void, Void>(){
             @Override
             protected Void doInBackground(Void... voids) {
                 roomDB.mainDao().delete(notes);

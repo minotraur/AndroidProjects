@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#696666"
     tools:context=".ui.photo.FragmentPhoto">
 
     <ImageView
@@ -22,6 +23,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="136dp"
         android:layout_marginTop="436dp"
+        android:backgroundTint="#651414"
         android:onClick="imageViewOnClick"
         android:text="Make Photo"
         app:layout_constraintStart_toStartOf="parent"

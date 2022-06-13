@@ -14,7 +14,7 @@ public class Notes {
     @ColumnInfo(name = "title")
     public String title;
 
-    @ColumnInfo(name = "description")
+    @ColumnInfo(name="description")
     public String description;
 
     public int getId() {

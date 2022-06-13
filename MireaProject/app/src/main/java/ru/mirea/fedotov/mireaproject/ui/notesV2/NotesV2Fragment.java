@@ -1,7 +1,5 @@
 package ru.mirea.fedotov.mireaproject.ui.notesV2;
 
-
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -22,8 +20,6 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import ru.mirea.fedotov.mireaproject.R;
-import ru.mirea.fedotov.mireaproject.ui.notes.db.Notes;
-import ru.mirea.fedotov.mireaproject.ui.notes.db.RoomDB;
 
 import java.util.List;
 

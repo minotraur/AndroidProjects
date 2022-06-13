@@ -29,15 +29,7 @@
             android:id="@+id/action_nav_settings_to_settingsFragment"
             app:destination="@id/settingsFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/nav_notes_main_fragment"
-        android:name="ru.mirea.fedotov.mireaproject.ui.notes.NotesMainFragment"
-        android:label="Notes"
-        tools:layout="@layout/fragment_notes_main">
-        <action
-            android:id="@+id/action_notesMainFragment_to_notesTalkerFragment"
-            app:destination="@id/notesTalkerFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/notesTalkerFragment"
         android:name="ru.mirea.fedotov.mireaproject.ui.notes.NotesSecondFragment"
@@ -108,9 +100,13 @@
         android:name="ru.mirea.fedotov.mireaproject.ui.audio.FragmentAudio"
         android:label="FragmentAudio" />
     <fragment
-        android:id="@+id/nav_histories"
-        android:name="ru.mirea.fedotov.mireaproject.ui.Stories.HistoriesFragment"
-        android:label="Histories"
-        tools:layout="@layout/fragment_stories" />
+        android:id="@+id/nav_notes_main_fragment"
+        android:name="ru.mirea.fedotov.mireaproject.ui.notes.NotesMainFragment"
+        android:label="Rooms"
+        tools:layout="@layout/fragment_notes_main">
+        <action
+            android:id="@+id/action_notesMainFragment_to_notesTalkerFragment"
+            app:destination="@id/notesTalkerFragment" />
+    </fragment>
 
 </navigation>

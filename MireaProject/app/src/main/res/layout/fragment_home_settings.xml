@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#696666"
     tools:context=".ui.settings.HomeSettingsFragment">
 
 
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Signature: "
-            android:textColor="@android:color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/tv_reply"
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Default reply:"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/tv_sync"
@@ -57,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Sync: "
-            android:textColor="@android:color/black" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

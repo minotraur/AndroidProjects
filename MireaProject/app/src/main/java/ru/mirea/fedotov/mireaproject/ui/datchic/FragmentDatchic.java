@@ -2,7 +2,6 @@ package ru.mirea.fedotov.mireaproject.ui.datchic;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -11,7 +10,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -19,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import ru.mirea.fedotov.mireaproject.MainActivity;
 import ru.mirea.fedotov.mireaproject.R;
 import ru.mirea.fedotov.mireaproject.databinding.FragmentHomeBinding;
 

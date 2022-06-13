@@ -19,7 +19,7 @@ import ru.mirea.fedotov.mireaproject.ui.notes.db.Notes;
 import ru.mirea.fedotov.mireaproject.ui.notes.db.RoomDB;
 
 public class NotesSecondFragment extends Fragment {
-    EditText editText_title, editText_notes;
+    EditText editText_title,editText_notes;
     Button saveButton;
 
     @Override
@@ -36,9 +36,9 @@ public class NotesSecondFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        editText_title = view.findViewById(R.id.editText_title);
-        editText_notes = view.findViewById(R.id.editText_notes);
-        saveButton = view.findViewById(R.id.saveNoteButton);
+        editText_title=view.findViewById(R.id.editText_title);
+        editText_notes=view.findViewById(R.id.editText_notes);
+        saveButton= view.findViewById(R.id.saveNoteButton);
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +50,7 @@ public class NotesSecondFragment extends Fragment {
         });
     }
 
-    private void saveNewNote(String editText_title, String editText_notes) {
+    private void saveNewNote(String editText_title, String editText_notes){
         RoomDB database = RoomDB.getInstance(this.getContext());
 
         Notes note = new Notes();

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#696666"
     tools:context=".ui.notes.NotesMainFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,8 +26,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="31dp"
+        android:contentDescription="TODO"
         android:src="@android:drawable/ic_menu_add"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="TODO" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </RelativeLayout>

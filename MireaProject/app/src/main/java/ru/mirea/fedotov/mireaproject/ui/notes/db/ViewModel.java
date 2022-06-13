@@ -16,7 +16,7 @@ public class ViewModel extends AndroidViewModel {
 
     }
 
-    public void deleteNote(Notes notes) {
+    public void deleteNote(Notes notes){
         notesRepository.deleteNote(notes);
     }
 }

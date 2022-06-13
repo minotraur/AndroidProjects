@@ -17,20 +17,20 @@ import ru.mirea.fedotov.mireaproject.ui.notes.db.Notes;
 
 import java.util.List;
 
-public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.MyViewHolder> {
+public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.MyViewHolder>{
     private final Context context;
     private List<Notes> notesList;
     private final ItemClicked itemClicked;
     private RecyclerView recyclerView;
 
-    public NotesListAdapter(Context context, ItemClicked itemClicked) {
+    public NotesListAdapter(Context context, ItemClicked itemClicked){
         this.context = context;
         this.itemClicked = itemClicked;
     }
 
 
     @SuppressLint("NotifyDataSetChanged")
-    public void setNotesList(List<Notes> notesList) {
+    public void setNotesList(List<Notes> notesList){
         this.notesList = notesList;
         notifyDataSetChanged();
     }
@@ -61,7 +61,7 @@ public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.MyVi
         });
     }
 
-    public interface ItemClicked {
+    public interface ItemClicked{
         void deletedClicked(Notes notes);
     }
 
@@ -70,12 +70,12 @@ public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.MyVi
         return this.notesList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder  {
         TextView tvTitle;
         TextView tvNote;
         ImageView deleteNoteImage;
 
-        public MyViewHolder(View view) {
+        public MyViewHolder(View view){
             super(view);
             tvTitle = view.findViewById(R.id.tvTitle);
             tvNote = view.findViewById(R.id.tvNote);

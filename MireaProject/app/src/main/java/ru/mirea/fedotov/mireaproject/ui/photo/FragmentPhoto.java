@@ -22,7 +22,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import ru.mirea.fedotov.mireaproject.MainActivity;
 import ru.mirea.fedotov.mireaproject.R;
 
 import java.io.File;
