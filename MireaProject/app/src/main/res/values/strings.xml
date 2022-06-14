@@ -3,6 +3,13 @@
     <string name="label_emailpassword">Email/Password Authentication</string>
     <string name="desc_emailpassword">Use an email and password to authenticate with
 Firebase.</string>
+
+    <string name="back"><![CDATA[<]]></string>
+    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="forward"><![CDATA[>>]]></string>
+    <string name="pause">||</string>
+
+
     <string name="hint_user_id">User ID</string>
     <string name="sign_in">Sign In</string>
     <string name="create_account">Create Account</string>
